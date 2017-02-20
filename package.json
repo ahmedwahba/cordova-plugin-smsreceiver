@@ -1,0 +1,21 @@
+{
+  "name": "cordova-plugin-sms-receiver",
+  "version": "1.0.0",
+  "description": "Android Cordova Plugin for SMS Receiving",
+  "cordova": {
+    "id": "cordova-plugin-sms-receiver",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/"
+  },
+  "keywords": [
+    "cordova",
+    "sms",
+    "receiver",
+    "cordova-android"
+  ]
+}

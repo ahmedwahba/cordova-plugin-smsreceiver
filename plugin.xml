@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-sms-receiver"
+        version="1.0.0">
+    
+    <name>Cordova SMS Receiver</name>
+
+    <description>Android Cordova Plugin for SMS Receiving</description>
+
+    <keywords>cordova,sms,receive</keywords>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <js-module src="www/SmsReceiver.js" name="SmsReceivingPlugin">
+        <clobbers target="window.sms" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+               <feature name="SmsReceivingPlugin">
+                   <param name="android-package" value="org.apache.cordova.smsreceiver.SmsReceivingPlugin"/>
+               </feature>
+           </config-file>
+
+           <config-file target="AndroidManifest.xml" parent="/manifest/application">
+               <receiver android:name="org.apache.cordova.smsreceiver.SmsReceiver" android:exported="true">
+                   <intent-filter android:priority="999">
+                       <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+                   </intent-filter>
+               </receiver>
+           </config-file>
+
+           <config-file target="AndroidManifest.xml" parent="/*">
+               <uses-permission android:name="android.permission.RECEIVE_SMS" />
+           </config-file>
+
+       <source-file src="src/android/SmsReceiver.java" target-dir="src/org/apache/cordova/smsreceiver" />
+       <source-file src="src/android/SmsReceivingPlugin.java" target-dir="src/org/apache/cordova/smsreceiver" />
+    </platform>
+</plugin>
