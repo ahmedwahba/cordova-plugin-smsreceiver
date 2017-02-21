@@ -8,7 +8,7 @@ This plugin was successfully tested on Android 5.1 , also on Marshmallow (Androi
 
 ## Install  ##
 
-	cordova plugin add cordova-plugin-sms-receiver
+	cordova plugin add cordova-plugin-smsreceiver
 
 
 ## Using the plugin ##

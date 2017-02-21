@@ -1,9 +1,9 @@
 {
-  "name": "cordova-plugin-sms-receiver",
+  "name": "cordova-plugin-smsreceiver",
   "version": "1.0.0",
   "description": "Android Cordova Plugin for SMS Receiving",
   "cordova": {
-    "id": "cordova-plugin-sms-receiver",
+    "id": "cordova-plugin-smsreceiver",
     "platforms": [
       "android"
     ]
