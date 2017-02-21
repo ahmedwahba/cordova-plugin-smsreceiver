@@ -30,26 +30,26 @@ Example:
   });     
 ```
 
-### startRecieving ###
+### startReceiving ###
 Start the SMS receiver waiting for incoming message
-The success callback function will be called everytime a new message is received.
+The success callback function will be called every time a new message is received.
 The error callback is called if an error occurs.
 
 Example:
 ```javascript
-  window.sms.startRecieving (function(msg) {
+  window.sms.startReceiving (function(msg) {
       alert(msg); /* message received successfully */
   }, function() {
       alert("Error while receiving messages");
   });
 ```
 
-### stopRecieving ###
+### stopReceiving ###
 Stop the SMS receiver
 
 Example:
 ```javascript
-  window.sms.stopRecieving (function() {
+  window.sms.stopReceiving (function() {
     alert("has stopped receiver Correctly");
   }, function() {
     alert("Error while stopping the SMS receiver");
@@ -75,7 +75,7 @@ all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN

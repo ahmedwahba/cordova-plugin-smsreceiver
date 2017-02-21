@@ -25,10 +25,10 @@ module.exports = {
     isSupported: function (successCallback, failureCallback) {
         cordova.exec(successCallback, failureCallback, 'SmsReceivingPlugin', 'HasReceivePermission', []);
     },
-    startRecieving: function (successCallback, failureCallback) {
+    startReceiving: function (successCallback, failureCallback) {
         cordova.exec(successCallback, failureCallback, 'SmsReceivingPlugin', 'StartReceiving', []);
     },
-    stopRecieving: function (successCallback, failureCallback) {
+    stopReceiving: function (successCallback, failureCallback) {
         cordova.exec(successCallback, failureCallback, 'SmsReceivingPlugin', 'StopReceiving', []);
     }
 };

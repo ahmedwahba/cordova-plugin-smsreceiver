@@ -16,6 +16,7 @@
     "cordova",
     "sms",
     "receiver",
+    "ecosystem:cordova",
     "cordova-android"
   ]
 }
