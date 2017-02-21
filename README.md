@@ -30,7 +30,7 @@ Example:
   });     
 ```
 
-### startReception ###
+### startRecieving ###
 Start the SMS receiver waiting for incoming message
 The success callback function will be called everytime a new message is received.
 The error callback is called if an error occurs.
@@ -44,7 +44,7 @@ Example:
   });
 ```
 
-### stopReception ###
+### stopRecieving ###
 Stop the SMS receiver
 
 Example:
